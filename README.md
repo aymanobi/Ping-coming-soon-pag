@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/aymanobi/Ping-coming-soon-pag](https://github.com/aymanobi/Ping-coming-soon-pag)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ping-coming-soon-pag.vercel.app/](https://ping-coming-soon-pag.vercel.app/)
 
 ## My process
 
