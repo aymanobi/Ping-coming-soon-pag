@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    /* Primary */
+
+    --Blue: hsl(223, 87%, 63%);
+
+    /* Secondary */
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    /* Neutral */
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+section .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .header .header_title {
+    text-align: center;
+    line-height: 0.7;
+}
+
+section .header .logo {
+    width: 86px;
+    height: 26px;
+    margin-bottom: 1.2rem;
+}
+
+section .header .header_title h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    color: var(--Gray);
+    font-weight: 300;
+}
+
+section .header .header_title span {
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+
+section .header .header_title p {
+    color: var(--Very-Dark-Blue);
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+section .email {
+    position: relative;
+    margin: 2rem auto 3rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section .email .error_text {
+    display: none;
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--Light-Red);
+}
+
+section .email input {
+    width: 450px;
+    padding: 1rem 1rem;
+    border: 1px solid var(--Gray);
+    border-radius: 50px;
+    outline: none;
+    margin-right: 0.625rem;
+}
+
+section .email button {
+    width: 200px;
+    padding: 1rem 1rem;
+    border: 1px solid var(--Blue);
+    background-color: var(--Blue);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: filter .7s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+section .email button:hover {
+    filter: drop-shadow(0px 0px 15px hsl(223, 87%, 63%));
+}
+
+section .hero_image {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+section div img {
+    /* width: 900px;*/
+    width: 100%;
+}
+
+section ul {
+    width: 15%;
+    margin: 2rem auto 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section ul li {
+    border: 1px solid var(--Pale-Blue);
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    list-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .9s;
+}
+
+section ul li:hover {
+    background-color: var(--Blue);
+
+}
+
+i {
+    font-size: 1.3rem;
+    color: var(--Blue);
+}
+
+section ul li:hover i {
+    color: #fff;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+@media only screen and (max-width: 600px) {
+
+    section .header .header_title h1 {
+        font-size: 1.6rem;
+    }
+
+    section .header .header_title p {
+        font-size: .8rem;
+    }
+
+    section .email {
+        gap: 1.9rem;
+    }
+
+    section .email .error_text {
+        bottom: 60px;
+        left: 60px;
+    }
+
+    section .email input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section .email button {
+        width: 100%;
+    }
+
+    section .hero_image {
+        width: 350px;
+        max-width: 100%;
+    }
+
+    section ul {
+        width: 50%;
+    }
+}

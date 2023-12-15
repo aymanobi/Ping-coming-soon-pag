@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor | Ping coming soon page">
+  <meta name="keywords" content="landing page, Frontend Mentor, Ping coming soon">
+  <meta property="og:title" content="Ping coming soon pag">
+  <meta property="og:description" content="Frontend Mentor | Ping coming soon pag">
+  <meta property="og:image" content="./images/illustration-dashboard.png">
+  <meta property="og:url" content="URL of your page">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <script src="https://kit.fontawesome.com/64113758ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <section aria-labelledby="sectionHeading">
+
+      <div class="header">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+        <div class="header_title">
+          <h1 id="sectionHeading">We are launching <span>soon!</span> </h1>
+          <p>Subscribe and get notified</p>
+        </div>
+      </div>
+
+
+      <div class="email">
+        <label for="email_input" style="display: none;">Your Email:</label>
+        <input type="email" name="email" id="email_input" placeholder="Your email address..."
+          aria-describedby="emailError">
+        <button type="submit" id="sumbit">Notify Me</button>
+        <p class="error_text" id="emailError" role="alert" aria-live="assertive">Please provide a valid email address
+        </p>
+      </div>
+
+      <div class="hero_image">
+        <img src="./images/illustration-dashboard.png" alt="illustration-dashboard" loading="lazy">
+      </div>
+
+      <ul>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+
+      <h2>&copy; Copyright Ping. All rights reserved.</h2>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://aymanel.netlify.app/" target="_blank">Ayman El Ouahabi</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
