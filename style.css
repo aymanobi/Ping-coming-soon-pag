@@ -185,7 +185,7 @@ h2 {
     color: var(--Gray);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     section .header .header_title h1 {
         font-size: 1.6rem;
